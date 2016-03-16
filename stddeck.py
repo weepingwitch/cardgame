@@ -17,7 +17,7 @@ def standardMons(d,g):
 
 def standardEffects(d,g):
     #dynamically generate and append some activation-effect cards
-    d.append(cards.Monster("a.phealer",g,1,2,effects.actHeal5))
+    d.append(cards.Monster("a.phealer",g,1,2,effects.actHeal2))
     d.append(cards.Monster("a.stunner",g,1,2,effects.actStunAll))
     d.append(cards.Monster("a.thunder",g,0,1,effects.actThunder))
     d.append(cards.Monster("a.charger",g,1,1,effects.actCharge))
@@ -39,7 +39,7 @@ def genDeck(g):
 
 
 
-    d.append(cards.Monster("a.phealer",g,1,2,effects.actHeal5))
+    d.append(cards.Monster("a.phealer",g,1,2,effects.actHeal2))
 
     d.append(cards.Monster("*a.weakener",g,1,2,effects.actWeaken))
     d.append(cards.Monster("*a.weakener",g,1,2,effects.actWeaken))

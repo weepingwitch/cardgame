@@ -6,11 +6,11 @@ import random, cards
 # activation effects - these take place when the card is first put in play
 
 
-#when a card with this effect is played, it forces you to discard three cards from your hand
+#when a card with this effect is played, it forces you to discard two cards from your hand
 def actSacrifice(card):
     card.g.dodiscard()
     card.g.dodiscard()
-    card.g.dodiscard()
+
 
 #when a card with this effect is played, two "minions" are spawned
 def actSpawn(card):
@@ -62,10 +62,10 @@ def actNecromance(card):
         nc.activate()
 
 #when a card with this effect is played, the user is healed for 5 health
-def actHeal5(card):
-    print card.name + " heals the user for 5 health"
+def actHeal2(card):
+    print card.name + " heals the user for 2 health"
     #call the gamestate heal function
-    card.g.heal(5)
+    card.g.heal(2)
 
 #when a card with this effect is played, the user draws a card
 def actDraw(card):
@@ -118,13 +118,13 @@ def actThunder(card):
     #call the enemy gamestate's damage function
     card.g.e.damage(1)
 
-#same as above, only this time it deals 3 damage instead of one
+#same as above, only this time it deals 2 damage instead of one
 def actxThunder(card):
     print card.name + " damages all enemies"
     ts = list(card.g.e.inplay)
     for c in ts:
-        c.damage(3)
-    card.g.e.damage(3)
+        c.damage(2)
+    card.g.e.damage(2)
 
 #when a card with this effect is played, all of the enemy monsters lose one attack
 def actWeaken(card):

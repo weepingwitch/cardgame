@@ -65,7 +65,7 @@ class GameState(object):
                     sys.exit("quit")
                 try:
                     #see if the input is a number
-                    pnum = int(pin)
+                    pnum = int(pin) - 1
                     #see if the input is in range
                     if (pnum >= 0) and (pnum < len(self.hand)):
                         print "-----------------------********************-----------------------"
