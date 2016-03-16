@@ -122,9 +122,41 @@ def singleplayer():
             sys.exit("DRAW")
 
 
+def pickgamemode():
+    #input loop
+    waiting = True
+    while waiting:
+        #output the relevant info
+        print "select a game mode!"
+        print "1 - single player"
+        print "2 - local multiplayer"
+        #take in player input
+        pin = raw_input("play mode #: ")
+        #check for quit
+        if pin == "q":
+            sys.exit("quit")
+        try:
+            #try casting to an int
+            pnum = int(pin) - 1
+            #check if in range
+            if (pnum >= 0) and (pnum < 2):
+                waiting = False
+                if pnum == 0:
+                    singleplayer()
+                elif pnum == 1:
+                    multiplayer()
+
+            else:
+                print "that wasn't in range!"
+
+        except ValueError:
+            print "that's not a number!"
+
+
+
 # when the script is called, this is what runs
 if __name__ == '__main__':
     print ""
     print "-----------------------"
 
-    multiplayer()
+    pickgamemode()
