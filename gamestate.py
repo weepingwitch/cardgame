@@ -94,7 +94,7 @@ class GameState(object):
     #print out the cards in your hand
     def printhand(self):
         print ""
-        print "your hand:"
+        print  self.name + "'s' hand:"
         #number them
         for i in xrange(len(self.hand)):
             print str(i+1) + " - " + self.hand[i]
