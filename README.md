@@ -1,4 +1,10 @@
 # cardgame
 a hearthstone-inspired python card game
 
-*more to be added here later*
+**README UNDER CONSTRUCTION**
+
+## running the game
+
+*python run.py*
+
+## playing the game
