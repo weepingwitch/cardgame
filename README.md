@@ -1,7 +1,6 @@
 # CARDGAME
 a shitty hearthstone-inspired text-based python card game
 
-README UNDER CONSTRUCTION
 
 ## running the game
 ```bash
@@ -19,7 +18,8 @@ the player plays one monster from her hand. this monster will not be active unti
 #### use phase
 the player "uses" each monster that is active. monsters that are active will have a ! after their name.
 when using a monster, the player must attack her opponent's monsters first, before she can attack her opponent's health directly.
-
+### ending the game
+a player loses when she has 0 health left. the game is a draw if both players have no cards left in their deck
 
 ## card effects
 ### no effects
