@@ -150,8 +150,8 @@ def actStunAll(card):
 #when a card with this effect is played, it's attack and HP are set equal to the number of monsters the enemy has in play
 def actDefend(card):
     l = len(card.g.e.inplay)
-    self.atk += l
-    self.hp += l
+    card.atk += l
+    card.hp += l
 
 
 #use effects - these are called when a card is "used" on a target
