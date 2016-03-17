@@ -30,6 +30,7 @@ a player loses when she has 0 health left. the game is a draw if both players ha
 ***these effects happen when a card is first put into play***
 * **a.charger** - can attack on the same turn that it is played
 * **a.damager** - deal 3 damage to the opponent's health
+* **a.defender** - set this card's attack and hp equal to the number of monsters the enemy has in play
 * **a.necromancer** - bring back one random monster from the discard pile
 * **a.ohealer** - add 2 health to one of your monsters in play
 * **a.phealer** - heal the user for 2 health

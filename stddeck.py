@@ -62,6 +62,9 @@ def genDeck(g):
     d.append(cards.Monster("*a.thunder",g,0,1,effects.actxThunder))
     d.append(cards.Monster("*a.thunder",g,0,1,effects.actxThunder))
 
+    d.append(cards.Monster("a.defender",g,0,0,effects.actDefend))
+    d.append(cards.Monster("a.defender",g,0,0,effects.actDefend))
+    d.append(cards.Monster("a.defender",g,0,0,effects.actDefend))
 
 
     d.append(cards.Monster("*a.charger",g,2,1,effects.actCharge))
