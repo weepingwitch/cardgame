@@ -88,16 +88,16 @@ def genDeck(g):
     d.append(cards.Monster("*a.summoner",g,2,1,effects.actDraw2))
     d.append(cards.Monster("*a.summoner",g,1,2,effects.actDraw2))
 
-    d.append(cards.Monster("*a.upgrader",g,2,1,effects.addAtkHealth))
-    d.append(cards.Monster("*a.upgrader",g,1,2,effects.addAtkHealth))
-    d.append(cards.Monster("*a.upgrader",g,1,1,effects.addAtkHealth))
+    d.append(cards.Monster("a.upgrader",g,2,1,effects.addAtkHealth))
+    d.append(cards.Monster("a.upgrader",g,1,2,effects.addAtkHealth))
+    d.append(cards.Monster("a.upgrader",g,1,1,effects.addAtkHealth))
 
-    d.append(cards.Monster("*a.ohealer",g,1,2,effects.addHealth))
-    d.append(cards.Monster("*a.ohealer",g,1,2,effects.addHealth))
-    d.append(cards.Monster("*a.ohealer",g,2,1,effects.addHealth))
-    d.append(cards.Monster("*a.ohealer",g,1,2,effects.addHealth))
-    d.append(cards.Monster("*a.ohealer",g,1,2,effects.addHealth))
-    d.append(cards.Monster("*a.ohealer",g,2,1,effects.addHealth))
+    d.append(cards.Monster("a.ohealer",g,1,2,effects.addHealth))
+    d.append(cards.Monster("a.ohealer",g,1,2,effects.addHealth))
+    d.append(cards.Monster("a.ohealer",g,2,1,effects.addHealth))
+    d.append(cards.Monster("a.ohealer",g,1,2,effects.addHealth))
+    d.append(cards.Monster("a.ohealer",g,1,2,effects.addHealth))
+    d.append(cards.Monster("a.ohealer",g,2,1,effects.addHealth))
 
 
 
