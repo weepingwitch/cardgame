@@ -108,6 +108,7 @@ class Enemy(object):
         #put it in play and activate it
         self.inplay.append(nc)
         nc.activate()
+        return ""
 
     #when the enemy needs to use their cards
     def usecards(self):
@@ -134,6 +135,7 @@ class Enemy(object):
                         print "enemey attacks!"
                         #use the card on the target
                         c.use(t)
+        return ""
 
     #randomly picks a card in play on the enemy's side
     def selectcardinplay(self):

@@ -134,8 +134,9 @@ def actWeaken(card):
         #subtract one from attack
         c.atk = c.atk - 1
         #make sure we don't get negative attack
-        if c.atk < 0:
+        if c.atk <= 0:
             c.atk = 0
+            c.used = True
 
 #when a card with this effect is played, all of the enemy monsters are stunned so they can't attack the next turn
 def actStunAll(card):
@@ -165,6 +166,7 @@ def useSilence(card,target):
     print card.name + " silences " + target.name + "!"
     #sets the target's attack to 0
     target.atk = 0
+    target.used = True
     #calls the normal attack code
     return False
 

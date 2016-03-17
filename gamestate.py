@@ -117,6 +117,7 @@ class GameState(object):
     #pick a card to play from your hand
     def playcard(self):
         #input loop
+        log = ""
         waiting = True
         while waiting:
             #output the relevant info
@@ -140,6 +141,7 @@ class GameState(object):
                     nc = self.hand[pnum]
                     self.hand.remove(self.hand[pnum])
                     print nc + " is now in play"
+                    log += self.name + " played a " + nc
                     #put it in play
                     self.inplay.append(nc)
                     #self.printinplay()
@@ -151,9 +153,11 @@ class GameState(object):
 
             except ValueError:
                 print "that's not a number!"
+        return log
 
     #this funcion is called once each turn to use cards in play
     def usecards(self):
+        log = ", "
         #check to see if there are any cards that can be used
         canplay = False
         #loop through and look for unused cards
@@ -172,9 +176,13 @@ class GameState(object):
             #see if the enemy has a card to target
             if t != False:
                 #if so, use the card
+                log += self.name + " used " + c + " on " + t
+
                 c.use(t)
             else:
                 print "enemy has no cards in play, you attack enemy directly"
+                log += self.name + " used " + c + " and directly attacked your health"
+
                 self.e.damage(c.atk)
             #see whether you can still play
             canplay = False
@@ -182,7 +190,7 @@ class GameState(object):
             for x in self.inplay:
                 if x.used == False:
                     canplay = True
-
+        return log
 
     #used when picking an ally card to updgrade/heal
     def selectally(self):

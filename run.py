@@ -42,26 +42,30 @@ def doTurn(g, mplay=False):
     #have the enemy draw a card
     g.e.draw()
     #have the enemy play a card
-    g.e.playcard()
+    log  = g.e.playcard()
     #have the enemy use cards
-    g.e.usecards()
+    log += g.e.usecards()
     #reset the .used on all enemy cards
     resetturn(g.e)
     #if we're doing a multiplayer match, change turns / clear the screen
     if mplay:
         changeturns(g)
+        print ""
+        print log
     print ""
     print "--"
     #have you draw a card
     g.draw()
     #have you play a card
-    g.playcard()
+    log = g.playcard()
     #have you use your cards
-    g.usecards()
+    log += g.usecards()
     #reset the .used on all your cards
     resetturn(g)
     if mplay:
         changeturns(g.e)
+        print ""
+        print log
 
 #used to clear the screen during multiplayer
 def changeturns(p):
@@ -141,6 +145,7 @@ def pickgamemode():
             #check if in range
             if (pnum >= 0) and (pnum < 2):
                 waiting = False
+                print ""
                 if pnum == 0:
                     singleplayer()
                 elif pnum == 1:
