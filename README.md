@@ -1,5 +1,5 @@
 # CARDGAME
-a hearthstone-inspired python card game
+a shitty hearthstone-inspired text-based python card game
 
 README UNDER CONSTRUCTION
 
