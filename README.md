@@ -25,6 +25,7 @@ a player loses when she has 0 health left. the game is a draw if both players ha
 ### no effects
 ***these cards don't have any effect***
 * monster
+
 ### activation effects
 ***these effects happen when a card is first put into play***
 * **a.charger** - can attack on the same turn that it is played
