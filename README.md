@@ -4,10 +4,14 @@ a hearthstone-inspired python card game
 README UNDER CONSTRUCTION
 
 ## running the game
-```
+```bash
 python run.py
 ```
 ## playing the game
+#### beginning the game
+to begin the game, each player shuffles their deck, and draws two cards
+#### each turn
+each turn has three phases - draw, play, and use.
 
 
 
@@ -34,7 +38,7 @@ python run.py
 ***these effects happen every time a card is used to attack an opposing monster***
 * **\*u.destroyer** - automatically destroy the opposing monster, but lose one health in the process
 * **u.grower** - gain one attack point, then attack
-* **i.silencer** - reduce the opposing monster's attack to 0
+* **u.silencer** - reduce the opposing monster's attack to 0
 
 ### destroy effects
 ***these effects happen when a card is destroyed***
