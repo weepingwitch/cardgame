@@ -19,7 +19,7 @@ the player plays one monster from her hand. this monster will not be active unti
 the player "uses" each monster that is active. monsters that are active will have a ! after their name.
 when using a monster, the player must attack her opponent's monsters first, before she can attack her opponent's health directly.
 ### ending the game
-a player loses when she has 0 health left. the game is a draw if both players have no cards left in their deck
+a player loses when she has 0 health left. the game is a draw if both players have no cards left in their decks
 
 ## card effects
 ### no effects
