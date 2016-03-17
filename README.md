@@ -8,14 +8,23 @@ README UNDER CONSTRUCTION
 python run.py
 ```
 ## playing the game
-#### beginning the game
-to begin the game, each player shuffles their deck, and draws two cards
-#### each turn
+### beginning the game
+to begin the game, each player shuffles her deck, and draws two cards
+### each turn
 each turn has three phases - draw, play, and use.
-
+##### draw phase
+the player draws one card
+##### play phase
+the player plays one monster from her hand. this monster will not be active until the following turn.
+#### use phase
+the player "uses" each monster that is active. monsters that are active will have a ! after their name.
+when using a monster, the player must attack her opponent's monsters first, before she can attack her opponent's health directly.
 
 
 ## card effects
+### no effects
+***these cards don't have any effect***
+* monster
 ### activation effects
 ***these effects happen when a card is first put into play***
 * **a.charger** - can attack on the same turn that it is played
