@@ -8,7 +8,7 @@ python run.py
 ```
 ## playing the game
 ### beginning the game
-to begin the game, each player shuffles her deck, and draws two cards
+to begin the game, each player shuffles her deck, and draws two cards. each player starts with 20 health.
 ### each turn
 each turn has three phases - draw, play, and use.
 ##### draw phase
@@ -16,8 +16,8 @@ the player draws one card
 ##### play phase
 the player plays one monster from her hand. this monster will not be active until the following turn.
 #### use phase
-the player "uses" each monster that is active. monsters that are active will have a ! after their name.
-when using a monster, the player must attack her opponent's monsters first, before she can attack her opponent's health directly.
+the player "uses" each monster in play that is active. monsters that are active will have a ! after their name.
+after selecting a monster to use, the player selects a target to attack - or, if there are no opposing monsters in play, the player attacks her opponent's health directly.
 ### ending the game
 a player loses when she has 0 health left. the game is a draw if both players have no cards left in their decks
 
