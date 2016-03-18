@@ -23,6 +23,24 @@ def standardEffects(d,g):
     d.append(cards.Monster("a.charger",g,1,1,effects.actCharge))
     d.append(cards.Monster("a.charger",g,1,1,effects.actCharge))
     d.append(cards.Monster("a.charger",g,1,1,effects.actCharge))
+    d.append(cards.Monster("a.ohealer",g,1,2,effects.addHealth))
+    d.append(cards.Monster("a.ohealer",g,2,1,effects.addHealth))
+
+
+def standardStars(d,g):
+    #dynamically generate and append some stronger effect monsters
+    d.append(cards.Monster("*a.weakener",g,1,2,effects.actWeaken))
+    d.append(cards.Monster("*a.weakener",g,1,2,effects.actWeaken))
+    d.append(cards.Monster("*a.thunder",g,0,1,effects.actxThunder))
+    d.append(cards.Monster("*a.thunder",g,0,1,effects.actxThunder))
+    d.append(cards.Monster("*a.charger",g,2,1,effects.actCharge))
+    d.append(cards.Monster("*a.charger",g,2,1,effects.actCharge))
+    d.append(cards.Monster("*a.summoner",g,2,1,effects.actDraw2))
+    d.append(cards.Monster("*a.summoner",g,1,2,effects.actDraw2))
+    d.append(cards.Monster("*u.destroyer",g,0,2,cards.Card.activate,effects.useDestroy))
+    d.append(cards.Monster("*u.destroyer",g,0,2,cards.Card.activate,effects.useDestroy))
+    d.append(cards.Monster("*a.sacrificer",g,4,5,effects.actSacrifice))
+    d.append(cards.Monster("*a.sacrificer",g,4,5,effects.actSacrifice))
 
 
 #this builds a standard deck
@@ -37,14 +55,13 @@ def genDeck(g):
     #put in the standard effects monsters
     standardEffects(d,g)
 
-
+    standardStars(d,g)
 
     d.append(cards.Monster("a.phealer",g,1,2,effects.actHeal2))
 
     d.append(cards.Monster("*a.weakener",g,1,2,effects.actWeaken))
     d.append(cards.Monster("*a.weakener",g,1,2,effects.actWeaken))
-    d.append(cards.Monster("*a.weakener",g,1,2,effects.actWeaken))
-    d.append(cards.Monster("*a.weakener",g,1,2,effects.actWeaken))
+
 
 
     d.append(cards.Monster("a.stunner",g,1,2,effects.actStunAll))
@@ -59,16 +76,14 @@ def genDeck(g):
     d.append(cards.Monster("a.thunder",g,0,1,effects.actThunder))
     d.append(cards.Monster("a.thunder",g,0,1,effects.actThunder))
     d.append(cards.Monster("a.thunder",g,0,1,effects.actThunder))
-    d.append(cards.Monster("*a.thunder",g,0,1,effects.actxThunder))
-    d.append(cards.Monster("*a.thunder",g,0,1,effects.actxThunder))
+
 
     d.append(cards.Monster("a.defender",g,0,0,effects.actDefend))
     d.append(cards.Monster("a.defender",g,0,0,effects.actDefend))
     d.append(cards.Monster("a.defender",g,0,0,effects.actDefend))
 
 
-    d.append(cards.Monster("*a.charger",g,2,1,effects.actCharge))
-    d.append(cards.Monster("*a.charger",g,2,1,effects.actCharge))
+
 
     d.append(cards.Monster("a.necromancer",g,1,1,effects.actNecromance))
     d.append(cards.Monster("a.necromancer",g,1,1,effects.actNecromance))
@@ -81,23 +96,20 @@ def genDeck(g):
     d.append(cards.Monster("a.spawner",g,1,1,effects.actSpawnone))
 
 
-    d.append(cards.Monster("*a.sacrificer",g,4,5,effects.actSacrifice))
-    d.append(cards.Monster("*a.sacrificer",g,4,5,effects.actSacrifice))
+
 
 
     d.append(cards.Monster("a.summoner",g,2,1,effects.actDraw))
     d.append(cards.Monster("a.summoner",g,1,2,effects.actDraw))
     d.append(cards.Monster("a.summoner",g,1,1,effects.actDraw))
-    d.append(cards.Monster("*a.summoner",g,2,1,effects.actDraw2))
-    d.append(cards.Monster("*a.summoner",g,1,2,effects.actDraw2))
+
 
     d.append(cards.Monster("a.upgrader",g,2,1,effects.addAtkHealth))
     d.append(cards.Monster("a.upgrader",g,1,2,effects.addAtkHealth))
     d.append(cards.Monster("a.upgrader",g,1,1,effects.addAtkHealth))
 
     d.append(cards.Monster("a.ohealer",g,1,2,effects.addHealth))
-    d.append(cards.Monster("a.ohealer",g,1,2,effects.addHealth))
-    d.append(cards.Monster("a.ohealer",g,2,1,effects.addHealth))
+
     d.append(cards.Monster("a.ohealer",g,1,2,effects.addHealth))
     d.append(cards.Monster("a.ohealer",g,1,2,effects.addHealth))
     d.append(cards.Monster("a.ohealer",g,2,1,effects.addHealth))
@@ -105,8 +117,7 @@ def genDeck(g):
 
 
     #dynamically generate and append some use effect monsters
-    d.append(cards.Monster("*u.destroyer",g,0,2,cards.Card.activate,effects.useDestroy))
-    d.append(cards.Monster("*u.destroyer",g,0,2,cards.Card.activate,effects.useDestroy))
+
 
     d.append(cards.Monster("u.grower",g,1,2,cards.Card.activate,effects.useGrow))
     d.append(cards.Monster("u.grower",g,1,2,cards.Card.activate,effects.useGrow))
