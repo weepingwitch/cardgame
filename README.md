@@ -1,6 +1,23 @@
 # CARDGAME
 a shitty hearthstone-inspired text-based python card game
 
+**Table of Contents**
+
+- [CARDGAME](#)
+	- [running the game](#)
+	- [playing the game](#)
+		- [beginning the game](#)
+		- [each turn](#)
+			- [draw phase](#)
+			- [play phase](#)
+			- [use phase](#)
+		- [ending the game](#)
+	- [the interface](#)
+	- [card effects](#)
+		- [no effects](#)
+		- [activation effects](#)
+		- [use effects](#)
+		- [destroy effects](#)
 
 ## running the game
 ```bash
