@@ -45,8 +45,6 @@ player's hand:
 1 - {a.stunner: 1,2}
 2 - {a.defender: 0,0}
 3 - {*a.sacrificer: 4,5}
-
-play card #:
 ```
 
 
