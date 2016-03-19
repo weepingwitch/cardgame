@@ -12,14 +12,35 @@ to begin the game, each player shuffles her deck, and draws two cards. each play
 ### each turn
 each turn has three phases - draw, play, and use.
 ##### draw phase
-the player draws one card
+the player draws one card from her deck
 ##### play phase
-the player plays one monster from her hand. this monster will not be active until the following turn.
+the player plays one card from her hand. this card will not be active until the following turn.
 #### use phase
-the player "uses" each monster in play that is active. monsters that are active will have a ! after their name.
-after selecting a monster to use, the player selects a target to attack - or, if there are no opposing monsters in play, the player attacks her opponent's health directly.
+the player "uses" each card in play that is active. card that are active will have a ! after their name.
+after selecting a card to use, the player selects a target to attack - or, if there are no opposing cards in play, the player attacks her opponent's health directly.
 ### ending the game
 a player loses when she has 0 health left. the game is a draw if both players have no cards left in their decks
+
+## the interface
+**example**
+```
+you drew a {*a.sacrificer: 4,5}
+select a card to play!
+you: 19 | enemy: 20
+
+enemy's cards in play:
+1 - {a.thunder: 0,1}
+
+player's cards in play:
+
+
+player's' hand:
+1 - {a.stunner: 1,2}
+2 - {a.defender: 0,0}
+3 - {*a.sacrificer: 4,5}
+
+play card #:
+```
 
 ## card effects
 ### no effects
