@@ -3,21 +3,21 @@ a shitty hearthstone-inspired text-based python card game
 
 **Table of Contents**
 
-- [CARDGAME](#)
-	- [running the game](#running-the-game)
-	- [playing the game](#playing-the-game)
-		- [beginning the game](#beginning-the-game)
-		- [each turn](#each-turn)
-			- [draw phase](#draw-phase)
-			- [play phase](#play-phase)
-			- [use phase](#use-phase)
-		- [ending the game](#ending-the-game)
-	- [the interface](#the-interface)
-	- [card effects](#card-effects)
-		- [no effects](#no-effects)
-		- [activation effects](#activation-effects)
-		- [use effects](#use-effects)
-		- [destroy effects](#destroy-effects)
+
+- [running the game](#running-the-game)
+- [playing the game](#playing-the-game)
+	- [beginning the game](#beginning-the-game)
+	- [each turn](#each-turn)
+		- [draw phase](#draw-phase)
+		- [play phase](#play-phase)
+		- [use phase](#use-phase)
+	- [ending the game](#ending-the-game)
+- [the interface](#the-interface)
+- [card effects](#card-effects)
+	- [no effects](#no-effects)
+	- [activation effects](#activation-effects)
+	- [use effects](#use-effects)
+	- [destroy effects](#destroy-effects)
 
 ## running the game
 ```bash
