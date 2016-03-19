@@ -22,25 +22,33 @@ after selecting a card to use, the player selects a target to attack - or, if th
 a player loses when she has 0 health left. the game is a draw if both players have no cards left in their decks
 
 ## the interface
+each turn, the following relevant information is printed out:
+* each player's health
+* the enemy's cards in play
+* your cards in play
+* the cards in your hand
+
+cards are displayed in the following format:
+*{card name: attack, defense}*
+
 **example**
 ```
-you drew a {*a.sacrificer: 4,5}
-select a card to play!
-you: 19 | enemy: 20
+you: 20 | enemy: 20
 
 enemy's cards in play:
-1 - {a.thunder: 0,1}
+1 - {monster: 2,4}
 
 player's cards in play:
 
 
-player's' hand:
+player's hand:
 1 - {a.stunner: 1,2}
 2 - {a.defender: 0,0}
 3 - {*a.sacrificer: 4,5}
 
 play card #:
 ```
+
 
 ## card effects
 ### no effects
