@@ -50,7 +50,7 @@ cards are displayed in the following format:
 
 **example**
 ```
-you: 20 | enemy: 20
+your health: 20 | enemy's health: 20
 
 enemy's cards in play:
 1 - {monster: 2,4}
@@ -61,7 +61,7 @@ player's cards in play:
 player's hand:
 1 - {a.stunner: 1,2}
 2 - {a.defender: 0,0}
-3 - {*a.sacrificer: 4,5}``
+3 - {*a.sacrificer: 4,5}
 ```
 
 

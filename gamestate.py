@@ -122,7 +122,7 @@ class GameState(object):
         while waiting:
             #output the relevant info
             print "select a card to play!"
-            print "you: " + str(self.hp) + " | enemy: " + str(self.e.hp)
+            print "your health: " + str(self.hp) + " | enemy's health: " + str(self.e.hp)
             self.e.printinplay()
             self.printinplay()
             self.printhand()
