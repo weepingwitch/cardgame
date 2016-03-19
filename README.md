@@ -15,7 +15,7 @@ each turn has three phases - draw, play, and use.
 the player draws one card from her deck
 ##### play phase
 the player plays one card from her hand. this card will not be active until the following turn.
-#### use phase
+##### use phase
 the player "uses" each card in play that is active. card that are active will have a ! after their name.
 after selecting a card to use, the player selects a target to attack - or, if there are no opposing cards in play, the player attacks her opponent's health directly.
 ### ending the game
@@ -44,7 +44,7 @@ player's cards in play:
 player's hand:
 1 - {a.stunner: 1,2}
 2 - {a.defender: 0,0}
-3 - {*a.sacrificer: 4,5}
+3 - {*a.sacrificer: 4,5}``
 ```
 
 
